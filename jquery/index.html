@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <h1>jQuery</h1>
+
+    <input type="text" id="username" name="Username" value="" /><br />
+    <input type="password" id="password" name="Password" value="" /><br />
+    <input type="button" id="auth-button" value="Logar" />
+    <input type="button" id="request-button" value="Fazer Requisição" />
+
+    <div id="result-area"></div>
+
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script>
+        $(document).ready(function ()
+        {
+            // Limpa o Token toda vez que a aplicação é carregada
+            localStorage.setItem('jtoken', '');
+
+            $("#auth-button").on('click', function ()
+            {
+                var data = {
+                    grant_type: 'password',
+                    username: $("#username").val(),
+                    password: $("#password").val()
+                }
+
+                $.ajax({
+                    url: "http://localhost:15797/api/security/token",
+                    type: 'post',
+                    contentType: 'x-www-form-urlencoded',
+                    data: data
+                })
+                .done(function (data)
+                {
+                    console.log(data);
+                    $("#result-area").append("<p>" + data.access_token + "</p>");
+                    localStorage.setItem('jtoken', data.access_token);
+                })
+                .error(function (data)
+                {
+                    $("#result-area").append("<p>Usuário ou senha inválidos</p>");
+                });
+            });
+
+            $("#request-button").on('click', function ()
+            {                
+                var token = localStorage.getItem('jtoken');
+
+                $.ajax({
+                    url: "http://localhost:15797/api/values",
+                    type: 'get',
+                    contentType: 'application/json',
+                    headers: {
+                        "Authorization": "Bearer " + token
+                    }
+                })
+                .done(function (data)
+                {
+                    $("#result-area").append("<p>" + data + "</p>");
+                })
+                .error(function (error)
+                {
+                    $("#result-area").append("<p>Falha na requisição</p>");
+                });
+            });
+        });
+    </script>
+</body>
+</html>
