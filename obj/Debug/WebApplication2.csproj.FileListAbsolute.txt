@@ -44,3 +44,27 @@ C:\Users\andrebaltieri\documents\visual studio 2015\Projects\WebApplication2\Web
 C:\Users\andrebaltieri\documents\visual studio 2015\Projects\WebApplication2\WebApplication2\bin\System.Web.WebPages.Razor.xml
 C:\Users\andrebaltieri\documents\visual studio 2015\Projects\WebApplication2\WebApplication2\bin\RestSharp.dll
 C:\Users\andrebaltieri\documents\visual studio 2015\Projects\WebApplication2\WebApplication2\bin\RestSharp.xml
+C:\dev\webapioauth\bin\WebApplication2.dll.config
+C:\dev\webapioauth\bin\WebApplication2.dll
+C:\dev\webapioauth\bin\WebApplication2.pdb
+C:\dev\webapioauth\bin\Antlr3.Runtime.pdb
+C:\dev\webapioauth\bin\Microsoft.Owin.xml
+C:\dev\webapioauth\bin\Microsoft.Owin.Cors.xml
+C:\dev\webapioauth\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\dev\webapioauth\bin\Microsoft.Owin.Security.xml
+C:\dev\webapioauth\bin\Microsoft.Owin.Security.OAuth.xml
+C:\dev\webapioauth\bin\Newtonsoft.Json.xml
+C:\dev\webapioauth\bin\RestSharp.xml
+C:\dev\webapioauth\bin\System.Net.Http.Formatting.xml
+C:\dev\webapioauth\bin\System.Web.Helpers.xml
+C:\dev\webapioauth\bin\System.Web.Http.xml
+C:\dev\webapioauth\bin\System.Web.Http.Owin.xml
+C:\dev\webapioauth\bin\System.Web.Mvc.xml
+C:\dev\webapioauth\bin\System.Web.Optimization.xml
+C:\dev\webapioauth\bin\System.Web.Razor.xml
+C:\dev\webapioauth\bin\System.Web.WebPages.xml
+C:\dev\webapioauth\bin\System.Web.WebPages.Deployment.xml
+C:\dev\webapioauth\bin\System.Web.WebPages.Razor.xml
+C:\dev\webapioauth\obj\Debug\WebApplication2.csprojResolveAssemblyReference.cache
+C:\dev\webapioauth\obj\Debug\WebApplication2.dll
+C:\dev\webapioauth\obj\Debug\WebApplication2.pdb
